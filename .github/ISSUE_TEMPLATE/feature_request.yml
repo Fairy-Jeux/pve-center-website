@@ -1,0 +1,23 @@
+name: Documentation Improvement / Guide Request
+description: Suggest a new guide, diagram, or showcase improvement for the portal
+title: "[Docs Feature] "
+labels: ["documentation", "enhancement"]
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Addition or Improvement
+      description: Explain what guide, example, or landing page enhancement would help users.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Related Repository / Topic
+      options:
+        - Server (pve-panel)
+        - Apple Native (pve-center-apple)
+        - Desktop & Android (pve-center-clients)
+        - Portal / VitePress UX (pve-center-website)
+    validations:
+      required: true

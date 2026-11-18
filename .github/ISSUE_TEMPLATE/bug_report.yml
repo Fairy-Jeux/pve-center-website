@@ -1,0 +1,33 @@
+name: Documentation Bug / Inaccuracy
+description: Report broken links, outdated API docs, or translation issues on the website
+title: "[Docs] "
+labels: ["documentation", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the PVE Command Center documentation accurate!
+  - type: dropdown
+    id: language
+    attributes:
+      label: Affected Language / Version
+      options:
+        - English (/)
+        - Français (/fr/)
+        - Both EN & FR
+    validations:
+      required: true
+  - type: input
+    id: page_url
+    attributes:
+      label: Page Path or URL
+      placeholder: "/guide/configuration or https://fairy-jeux.github.io/pve-center-website/..."
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What is wrong or unclear?
+      description: Describe the discrepancy compared to the actual pve-panel, pve-center-apple, or pve-center-clients code.
+    validations:
+      required: true

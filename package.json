@@ -1,0 +1,15 @@
+{
+  "name": "pve-center-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Official bilingual landing page and technical documentation portal for PVE Command Center",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vitepress": "^1.5.0"
+  }
+}

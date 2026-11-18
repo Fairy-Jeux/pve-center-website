@@ -1,0 +1,456 @@
+/* ==========================================================================
+   PVE Command Center — Liquid Glass & Cider Studio Theme for VitePress
+   Mirrors theme tokens from pve-panel/frontend/src/lib/theme.ts & index.css
+   ========================================================================== */
+
+:root {
+  --accent-rgb: 6 182 212;
+  --accent-2-rgb: 99 102 241;
+  --accent-hex: #06b6d4;
+  --accent-2-hex: #6366f1;
+  --cider-crimson: #fa233b;
+  --cider-emerald: #10b981;
+  --cider-amber: #f59e0b;
+  --cider-purple: #a855f7;
+
+  /* Light Liquid Glass */
+  --vp-c-bg: #eef4fa;
+  --vp-c-bg-alt: rgba(241, 247, 252, 0.84);
+  --vp-c-bg-elv: rgba(255, 255, 255, 0.92);
+  --vp-c-bg-soft: rgba(255, 255, 255, 0.72);
+
+  --vp-c-brand-1: var(--accent-hex);
+  --vp-c-brand-2: var(--accent-2-hex);
+  --vp-c-brand-3: var(--accent-hex);
+  --vp-c-brand-soft: rgb(var(--accent-rgb) / 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, var(--accent-hex) 0%, var(--accent-2-hex) 100%);
+  --vp-home-hero-image-background-image: radial-gradient(circle, rgb(var(--accent-rgb) / 0.32) 0%, rgb(var(--accent-2-rgb) / 0.16) 50%, transparent 72%);
+  --vp-home-hero-image-filter: blur(44px);
+
+  --glass-surface: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.90) 0%,
+    rgba(241, 247, 252, 0.78) 55%,
+    rgb(var(--accent-rgb) / 0.06) 100%
+  );
+  --glass-border: rgb(var(--accent-rgb) / 0.18);
+  --glass-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.95),
+    0 14px 36px -14px rgba(15, 23, 42, 0.14);
+}
+
+html.dark {
+  /* Obsidian Dark Liquid Glass */
+  --vp-c-bg: #030816;
+  --vp-c-bg-alt: rgba(15, 23, 42, 0.65);
+  --vp-c-bg-elv: rgba(15, 23, 42, 0.88);
+  --vp-c-bg-soft: rgba(15, 23, 42, 0.56);
+
+  --vp-c-brand-1: var(--accent-hex);
+  --vp-c-brand-2: var(--accent-2-hex);
+  --vp-c-brand-3: var(--accent-hex);
+  --vp-c-brand-soft: rgb(var(--accent-rgb) / 0.18);
+
+  --glass-surface: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.085) 0%,
+    rgba(15, 23, 42, 0.68) 48%,
+    rgba(4, 10, 24, 0.86) 100%
+  );
+  --glass-border: rgb(var(--accent-rgb) / 0.22);
+  --glass-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.16),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.03),
+    0 18px 44px -14px rgba(0, 0, 0, 0.75);
+}
+
+/* Ambient Mesh Backdrop */
+body {
+  background-color: var(--vp-c-bg);
+  background-image:
+    radial-gradient(ellipse 90% 55% at 15% -12%, rgb(var(--accent-rgb) / 0.20), transparent 65%),
+    radial-gradient(ellipse 75% 50% at 92% -6%, rgb(var(--accent-2-rgb) / 0.16), transparent 60%),
+    radial-gradient(ellipse 65% 45% at 50% 108%, rgb(var(--accent-rgb) / 0.10), transparent 70%);
+  background-attachment: fixed;
+}
+
+/* Navbar & Sidebar Liquid Glass */
+.VPNavBar:not(.top),
+.VPNavBar.has-sidebar {
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+}
+
+.VPNavBar.has-sidebar .curtain::before,
+.VPNavBar:not(.top) {
+  background: rgba(238, 244, 250, 0.76) !important;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+html.dark .VPNavBar.has-sidebar .curtain::before,
+html.dark .VPNavBar:not(.top) {
+  background: rgba(3, 8, 22, 0.76) !important;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+/* Hero & Feature Cards */
+.VPFeature {
+  background: var(--glass-surface) !important;
+  backdrop-filter: blur(24px) saturate(175%);
+  -webkit-backdrop-filter: blur(24px) saturate(175%);
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px !important;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-2px);
+  border-color: rgb(var(--accent-rgb) / 0.48) !important;
+}
+
+.VPButton.brand {
+  background: linear-gradient(135deg, rgb(var(--accent-rgb)) 0%, rgb(var(--accent-2-rgb)) 100%) !important;
+  border: none !important;
+  box-shadow: 0 10px 26px -8px rgb(var(--accent-rgb) / 0.55);
+}
+
+.VPButton.brand:hover {
+  filter: brightness(1.1);
+}
+
+/* Custom Showcase Sections inside Landing Pages */
+.pve-section {
+  max-width: 1152px;
+  margin: 3.5rem auto 0;
+  padding: 0 24px;
+}
+
+.pve-section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pve-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.28rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-hex);
+  background: rgb(var(--accent-rgb) / 0.12);
+  border: 1px solid rgb(var(--accent-rgb) / 0.30);
+  margin-bottom: 0.75rem;
+}
+
+.pve-section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.pve-section-subtitle {
+  font-size: 1rem;
+  color: var(--vp-c-text-2);
+  max-width: 680px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Glass Card Utility */
+.glass-card {
+  background: var(--glass-surface);
+  backdrop-filter: blur(26px) saturate(180%);
+  -webkit-backdrop-filter: blur(26px) saturate(180%);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  border-radius: 20px;
+  padding: 1.35rem;
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgb(var(--accent-rgb) / 0.46);
+}
+
+/* Per-Platform Download Hub Grid */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 1rem;
+}
+
+.platform-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.platform-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.platform-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.platform-icon-pill {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, rgb(var(--accent-rgb) / 0.18), rgb(var(--accent-2-rgb) / 0.18));
+  border: 1px solid rgb(var(--accent-rgb) / 0.30);
+}
+
+.platform-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--vp-c-text-1);
+}
+
+.platform-tech {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-2);
+}
+
+.format-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.format-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.55rem;
+  border-radius: 9999px;
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: rgb(var(--accent-rgb) / 0.10);
+  border: 1px solid rgb(var(--accent-rgb) / 0.24);
+}
+
+.platform-desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-2);
+  margin: 0;
+}
+
+.platform-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: transform 150ms ease, filter 150ms ease, border-color 150ms ease;
+}
+
+.download-btn.primary {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, rgb(var(--accent-rgb)) 0%, rgb(var(--accent-2-rgb)) 100%);
+  box-shadow: 0 8px 20px -6px rgb(var(--accent-rgb) / 0.55);
+}
+
+.download-btn.secondary {
+  color: var(--vp-c-text-1) !important;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--glass-border);
+}
+
+html:not(.dark) .download-btn.secondary {
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.download-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.08);
+}
+
+/* Screenshot Showcase Grid */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.15rem;
+  align-items: stretch;
+}
+
+@media (max-width: 860px) {
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.screenshot-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.85rem;
+}
+
+.screenshot-card img {
+  border-radius: 22px;
+  max-height: 440px;
+  width: auto;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 22px 48px -18px rgba(0, 0, 0, 0.55);
+}
+
+.screenshot-tv {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.screenshot-tv img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 26px 64px -20px rgba(0, 0, 0, 0.65);
+}
+
+.screenshot-caption strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.2rem;
+}
+
+.screenshot-caption span {
+  font-size: 0.82rem;
+  color: var(--vp-c-text-2);
+}
+
+/* Cider Accent Themes & Homelab Icon Catalog */
+.accent-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.accent-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  transition: transform 150ms ease, border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.accent-chip:hover {
+  transform: translateY(-1px);
+}
+
+.accent-chip.active {
+  border-color: var(--chip-hex);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--chip-hex) 28%, transparent);
+}
+
+.accent-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 9999px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.brand-catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.brand-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.32rem 0.72rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  background: rgb(var(--accent-rgb) / 0.08);
+  border: 1px solid var(--glass-border);
+}
+
+.brand-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+}
+
+/* Ecosystem 4-Repo Grid */
+.ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ecosystem-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.ecosystem-repo {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-hex);
+}
+
+/* Custom code block & table polish */
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+.vp-doc table {
+  border-radius: 14px;
+  overflow: hidden;
+}
