@@ -1,6 +1,6 @@
 # Configuration, Sondes & Notifications
 
-PVE Command Center centralise sa configuration déclarative dans `config/config.yaml` (monté sur `/app/config/config.yaml` en Docker). Un modèle commenté complet est fourni dans [`config/config.example.yaml`](https://github.com/Fairy-Jeux/pve-panel/blob/main/config/config.example.yaml).
+PVE Command Center centralise sa configuration déclarative dans `config/config.yaml` (monté sur `/app/config/config.yaml` en Docker). Un modèle commenté complet est fourni dans [`config/config.example.yaml`](https://github.com/PVE-Center/pve-panel/blob/main/config/config.example.yaml).
 
 ## Fonctionnement de `config.yaml`
 
@@ -233,4 +233,4 @@ Surcharges de chemins et de liaison réseau :
 
 Toutes les variables de `.env.example` (`DEV_AUTH_BYPASS`, `ALLOWED_TAILSCALE_USERS`, `PROTECTED_OWNER_USERNAME`, `PVE_*`, `JELLYFIN_*`, `JELLYSEERR_*`, `PLEX_*`, `RADARR_*`, `SONARR_*`, `PROWLARR_*`, `QBIT_*`) restent utilisables à la fois comme repli et comme sources d’interpolation `${VAR}` dans `config.yaml`.
 
-Le format hérité `services.yaml` suit exactement le modèle [`services.example.yaml`](https://github.com/Fairy-Jeux/pve-panel/blob/main/services.example.yaml).
+Le format hérité `services.yaml` suit exactement le modèle [`services.example.yaml`](https://github.com/PVE-Center/pve-panel/blob/main/services.example.yaml).

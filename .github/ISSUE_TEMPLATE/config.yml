@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Server Issues (pve-panel)
-    url: https://github.com/Fairy-Jeux/pve-panel/issues
+    url: https://github.com/PVE-Center/pve-panel/issues
     about: Report backend, Docker, install.sh, or Web UI bugs in pve-panel
   - name: Apple App Issues (pve-center-apple)
-    url: https://github.com/Fairy-Jeux/pve-center-apple/issues
+    url: https://github.com/PVE-Center/pve-center-apple/issues
     about: Report iOS, iPadOS, macOS, or tvOS bugs in pve-center-apple
   - name: Desktop & Android Issues (pve-center-clients)
-    url: https://github.com/Fairy-Jeux/pve-center-clients/issues
+    url: https://github.com/PVE-Center/pve-center-clients/issues
     about: Report Windows, Linux, or Android client issues in pve-center-clients

@@ -7,7 +7,7 @@ PVE Command Center (`pve-panel`) peut être déployé automatiquement via le scr
 Exécutez `install.sh` en `root` directement sur votre **hôte Proxmox VE** ou dans un conteneur **Linux / LXC** existant :
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-panel.git pve-panel
+git clone https://github.com/PVE-Center/pve-panel.git pve-panel
 cd pve-panel
 chmod +x install.sh
 sudo ./install.sh
@@ -57,7 +57,7 @@ Dans un conteneur LXC ou sur un serveur Linux standard (ou avec `--in-container`
 ## Option 2 — Docker Compose manuel
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-panel.git pve-panel
+git clone https://github.com/PVE-Center/pve-panel.git pve-panel
 cd pve-panel
 mkdir -p config
 cp config/config.example.yaml config/config.yaml
@@ -68,7 +68,7 @@ docker compose up -d --build
 
 ### Dockerfile multi-stage
 
-Le [`Dockerfile`](https://github.com/Fairy-Jeux/pve-panel/blob/main/Dockerfile) repose sur deux étapes :
+Le [`Dockerfile`](https://github.com/PVE-Center/pve-panel/blob/main/Dockerfile) repose sur deux étapes :
 
 1. **Stage 1 (`node:22-alpine`)** : exécute `npm ci` et `npm run build` sur le frontend React 19 + TypeScript + Vite 6 + Tailwind CSS vers `dist/`.
 2. **Stage 2 (`python:3.12-slim`)** : installe `iputils-ping` (pour les sondes `icmp_ping`) et `ca-certificates`, installe `backend/requirements.txt`, copie `backend/app` et les fichiers statiques vers `/app/static`, puis lance Uvicorn sur le port `8000` avec `--no-proxy-headers`.

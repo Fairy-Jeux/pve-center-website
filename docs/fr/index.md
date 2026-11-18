@@ -80,7 +80,7 @@ features:
 <section class="pve-section">
   <div class="pve-section-header">
     <span class="pve-eyebrow">Écosystème Open-Source en 4 Dépôts</span>
-    <h2 class="pve-section-title">Architecture Modulaire Fairy-Jeux</h2>
+    <h2 class="pve-section-title">Architecture Modulaire PVE-Center</h2>
     <p class="pve-section-subtitle">
       Quatre dépôts distincts sous licence MIT pour garder les conteneurs serveur légers tout en offrant des clients natifs dédiés pour Apple, Desktop et Android.
     </p>
@@ -97,7 +97,7 @@ features:
     </div>
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-panel.git pve-panel
+git clone https://github.com/PVE-Center/pve-panel.git pve-panel
 cd pve-panel
 chmod +x install.sh
 sudo ./install.sh

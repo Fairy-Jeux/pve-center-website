@@ -6,7 +6,7 @@ PVE Command Center propose des applications clientes dédiées pour l’écosyst
 
 ## Apple Natif (`iOS / iPadOS / macOS / tvOS`) {#apple-native}
 
-**Dépôt :** [`Fairy-Jeux/pve-center-apple`](https://github.com/Fairy-Jeux/pve-center-apple)
+**Dépôt :** [`PVE-Center/pve-center-apple`](https://github.com/PVE-Center/pve-center-apple)
 
 Une base de code unique **Swift 6** / **SwiftUI** (`PVECenter.xcodeproj` & `Package.swift`) ciblant :
 
@@ -17,7 +17,7 @@ Une base de code unique **Swift 6** / **SwiftUI** (`PVECenter.xcodeproj` & `Pack
 ### Commandes de compilation et déploiement Apple
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-apple.git
+git clone https://github.com/PVE-Center/pve-center-apple.git
 cd pve-center-apple
 
 # Vérifier le package Swift 6 (macOS)
@@ -48,7 +48,7 @@ swift build
 
 ## Desktop (`Windows & Linux — Tauri v2`) {#desktop-tauri}
 
-**Dépôt :** [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients)
+**Dépôt :** [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients)
 
 Le client bureau encapsule l’interface React 19 + Tailwind CSS dans une coquille Rust **Tauri v2** (`src-tauri/`, Bundle ID `io.github.pvepanel.desktop`, fenêtre `1280×820` par défaut) dotée d’une icône **System Tray** native (Afficher/Masquer & Quitter) et d’un sélecteur de serveur distant persisté en `localStorage` compatible IP LAN et `https://*.ts.net`.
 
@@ -62,7 +62,7 @@ Le client bureau encapsule l’interface React 19 + Tailwind CSS dans une coquil
 ### Commandes de compilation Desktop
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 npm ci
 
@@ -77,7 +77,7 @@ npm run tauri:dev
 Sous **Windows (PowerShell)** :
 
 ```powershell
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 .\scripts\build-windows.ps1
 # Génère les installeurs .exe (NSIS) et .msi dans src-tauri\target\release\bundle\
@@ -87,7 +87,7 @@ cd pve-center-clients
 
 ## Android (`Capacitor 8`) {#android-capacitor}
 
-**Dépôt :** [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients)
+**Dépôt :** [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients)
 
 Le client Android empaquette la PWA React 19 avec **Capacitor 8** (`@capacitor/android ^8.6.2`, App ID `io.github.pvepanel.app`, `CapacitorHttp` activé). `AndroidManifest.xml` et `capacitor.config.ts` (`androidScheme: 'http'`, `cleartext: true`, `allowMixedContent: true`) sont préconfigurés pour supporter aussi bien les IP LAN locales (`http://192.168.x.x:8000`) que les domaines HTTPS Tailscale (`https://*.ts.net`).
 
@@ -99,7 +99,7 @@ Le client Android empaquette la PWA React 19 avec **Capacitor 8** (`@capacitor/a
 ### Commandes de compilation Android
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 npm ci
 

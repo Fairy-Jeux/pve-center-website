@@ -6,7 +6,7 @@ PVE Command Center provides dedicated client applications across Apple ecosystem
 
 ## Apple Native (`iOS / iPadOS / macOS / tvOS`) {#apple-native}
 
-**Repository:** [`Fairy-Jeux/pve-center-apple`](https://github.com/Fairy-Jeux/pve-center-apple)
+**Repository:** [`PVE-Center/pve-center-apple`](https://github.com/PVE-Center/pve-center-apple)
 
 A single **Swift 6** / **SwiftUI** codebase (`PVECenter.xcodeproj` & `Package.swift`) targeting:
 
@@ -17,7 +17,7 @@ A single **Swift 6** / **SwiftUI** codebase (`PVECenter.xcodeproj` & `Package.sw
 ### Apple Build & Run Commands
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-apple.git
+git clone https://github.com/PVE-Center/pve-center-apple.git
 cd pve-center-apple
 
 # Verify Swift 6 package build (macOS)
@@ -48,7 +48,7 @@ swift build
 
 ## Desktop (`Windows & Linux — Tauri v2`) {#desktop-tauri}
 
-**Repository:** [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients)
+**Repository:** [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients)
 
 The desktop client wraps the React 19 + Tailwind CSS UI inside a **Tauri v2** Rust shell (`src-tauri/`, Bundle ID `io.github.pvepanel.desktop`, `1280×820` default window) with a native **System Tray** icon (Show/Hide window & Quit) and `localStorage`-persisted remote server profiles so you can point the desktop app to any LAN IP or `https://*.ts.net` URL.
 
@@ -62,7 +62,7 @@ The desktop client wraps the React 19 + Tailwind CSS UI inside a **Tauri v2** Ru
 ### Desktop Build Commands
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 npm ci
 
@@ -77,7 +77,7 @@ npm run tauri:dev
 On **Windows (PowerShell)**:
 
 ```powershell
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 .\scripts\build-windows.ps1
 # Generates .exe (NSIS) and .msi installers under src-tauri\target\release\bundle\
@@ -87,7 +87,7 @@ cd pve-center-clients
 
 ## Android (`Capacitor 8`) {#android-capacitor}
 
-**Repository:** [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients)
+**Repository:** [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients)
 
 The Android client packages the React 19 PWA with **Capacitor 8** (`@capacitor/android ^8.6.2`, App ID `io.github.pvepanel.app`, `CapacitorHttp` enabled) and pre-configures `AndroidManifest.xml` + `capacitor.config.ts` (`androidScheme: 'http'`, `cleartext: true`, `allowMixedContent: true`) so both local `http://192.168.x.x:8000` homelab IPs and `https://*.ts.net` Tailscale URLs work reliably.
 
@@ -99,7 +99,7 @@ The Android client packages the React 19 PWA with **Capacitor 8** (`@capacitor/a
 ### Android Build Commands
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-clients.git
+git clone https://github.com/PVE-Center/pve-center-clients.git
 cd pve-center-clients
 npm ci
 

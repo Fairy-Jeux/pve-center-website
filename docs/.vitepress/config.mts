@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 const REPOS = {
-  server: 'https://github.com/Fairy-Jeux/pve-panel',
-  apple: 'https://github.com/Fairy-Jeux/pve-center-apple',
-  clients: 'https://github.com/Fairy-Jeux/pve-center-clients',
-  website: 'https://github.com/Fairy-Jeux/pve-center-website',
+  server: 'https://github.com/PVE-Center/pve-panel',
+  apple: 'https://github.com/PVE-Center/pve-center-apple',
+  clients: 'https://github.com/PVE-Center/pve-center-clients',
+  website: 'https://github.com/PVE-Center/pve-center-website',
 }
 
 const serverSvg =
@@ -153,7 +153,7 @@ export default defineConfig({
         },
         footer: {
           message:
-            'Released under the <a href="https://github.com/Fairy-Jeux/pve-center-website/blob/main/LICENSE">MIT License</a>. Part of the Fairy-Jeux PVE Command Center ecosystem.',
+            'Released under the <a href="https://github.com/PVE-Center/pve-center-website/blob/main/LICENSE">MIT License</a>. Part of the PVE-Center ecosystem.',
           copyright: 'Copyright © 2026 PVE Command Center Contributors',
         },
       },
@@ -231,7 +231,7 @@ export default defineConfig({
         langMenuLabel: 'Langue',
         footer: {
           message:
-            'Distribué sous <a href="https://github.com/Fairy-Jeux/pve-center-website/blob/main/LICENSE">licence MIT</a>. Écosystème open-source Fairy-Jeux PVE Command Center.',
+            'Distribué sous <a href="https://github.com/PVE-Center/pve-center-website/blob/main/LICENSE">licence MIT</a>. Écosystème open-source PVE-Center.',
           copyright: 'Copyright © 2026 PVE Command Center Contributors',
         },
       },

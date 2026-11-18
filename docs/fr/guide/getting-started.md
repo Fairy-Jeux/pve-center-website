@@ -17,10 +17,10 @@ PVE Command Center est structuré en quatre dépôts open-source distincts sous 
 
 | Dépôt | Rôle | Stack technique |
 |---|---|---|
-| [`Fairy-Jeux/pve-panel`](https://github.com/Fairy-Jeux/pve-panel) | Serveur FastAPI, Web PWA embarquée, Docker et installateur Proxmox LXC | Python 3.12, FastAPI, SQLite WAL, React 19, Vite 6, Tailwind CSS |
-| [`Fairy-Jeux/pve-center-apple`](https://github.com/Fairy-Jeux/pve-center-apple) | App Apple universelle native (iPhone, iPad, Mac & Apple TV `tvOS 27.0`) | Swift 6, SwiftUI, SwiftData, Keychain, Swift Charts, CryptoKit, Network.framework |
-| [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients) | Clients Desktop & Mobile basés sur l’UI React 19 | Tauri v2 (Rust + System Tray) Windows/Linux, Capacitor 8 Android |
-| [`Fairy-Jeux/pve-center-website`](https://github.com/Fairy-Jeux/pve-center-website) | Vitrine vitale, hub de téléchargements et documentation bilingue EN/FR | VitePress 1.x, Vue 3, Liquid Glass CSS |
+| [`PVE-Center/pve-panel`](https://github.com/PVE-Center/pve-panel) | Serveur FastAPI, Web PWA embarquée, Docker et installateur Proxmox LXC | Python 3.12, FastAPI, SQLite WAL, React 19, Vite 6, Tailwind CSS |
+| [`PVE-Center/pve-center-apple`](https://github.com/PVE-Center/pve-center-apple) | App Apple universelle native (iPhone, iPad, Mac & Apple TV `tvOS 27.0`) | Swift 6, SwiftUI, SwiftData, Keychain, Swift Charts, CryptoKit, Network.framework |
+| [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients) | Clients Desktop & Mobile basés sur l’UI React 19 | Tauri v2 (Rust + System Tray) Windows/Linux, Capacitor 8 Android |
+| [`PVE-Center/pve-center-website`](https://github.com/PVE-Center/pve-center-website) | Vitrine vitale, hub de téléchargements et documentation bilingue EN/FR | VitePress 1.x, Vue 3, Liquid Glass CSS |
 
 ## Prérequis
 
@@ -35,7 +35,7 @@ PVE Command Center est structuré en quatre dépôts open-source distincts sous 
 
 - **Web PWA** : tout navigateur moderne (ou Safari *Sur l’écran d’accueil* sur iOS/iPadOS), servi directement par `pve-panel` sur le port `8000` ou via Tailscale HTTPS.
 - **Apple Natif** : iOS 27 / iPadOS 27 / macOS 27 / tvOS 27 (Xcode 27+ et Swift 6.2 pour compiler depuis les sources ; fonctionne avec un compte Apple gratuit, ou Apple Developer Program pour le push APNs en arrière-plan).
-- **Windows / Linux / Android** : installeurs précompilés via [`pve-center-clients` Releases](https://github.com/Fairy-Jeux/pve-center-clients/releases), ou compilation locale avec Node.js 22+, Rust/Cargo (Tauri v2) ou Android SDK / Gradle (Capacitor 8).
+- **Windows / Linux / Android** : installeurs précompilés via [`pve-center-clients` Releases](https://github.com/PVE-Center/pve-center-clients/releases), ou compilation locale avec Node.js 22+, Rust/Cargo (Tauri v2) ou Android SDK / Gradle (Capacitor 8).
 
 ## Onboarding initial & Mode Démo
 

@@ -17,10 +17,10 @@ PVE Command Center is organized into four focused open-source repositories under
 
 | Repository | Purpose | Tech Stack |
 |---|---|---|
-| [`Fairy-Jeux/pve-panel`](https://github.com/Fairy-Jeux/pve-panel) | Core server, embedded Web PWA, Docker image, and automated Proxmox LXC installer | Python 3.12, FastAPI, SQLite WAL, React 19, Vite 6, Tailwind CSS |
-| [`Fairy-Jeux/pve-center-apple`](https://github.com/Fairy-Jeux/pve-center-apple) | Native Apple universal app for iPhone, iPad, Mac, and Apple TV (`tvOS 27.0`) | Swift 6, SwiftUI, SwiftData, Keychain, Swift Charts, CryptoKit, Network.framework |
-| [`Fairy-Jeux/pve-center-clients`](https://github.com/Fairy-Jeux/pve-center-clients) | Native desktop & Android clients built from the React 19 UI | Tauri v2 (Rust + System Tray) for Windows/Linux, Capacitor 8 for Android |
-| [`Fairy-Jeux/pve-center-website`](https://github.com/Fairy-Jeux/pve-center-website) | Official showcase, download hub, and bilingual EN/FR documentation portal | VitePress 1.x, Vue 3, Liquid Glass CSS |
+| [`PVE-Center/pve-panel`](https://github.com/PVE-Center/pve-panel) | Core server, embedded Web PWA, Docker image, and automated Proxmox LXC installer | Python 3.12, FastAPI, SQLite WAL, React 19, Vite 6, Tailwind CSS |
+| [`PVE-Center/pve-center-apple`](https://github.com/PVE-Center/pve-center-apple) | Native Apple universal app for iPhone, iPad, Mac, and Apple TV (`tvOS 27.0`) | Swift 6, SwiftUI, SwiftData, Keychain, Swift Charts, CryptoKit, Network.framework |
+| [`PVE-Center/pve-center-clients`](https://github.com/PVE-Center/pve-center-clients) | Native desktop & Android clients built from the React 19 UI | Tauri v2 (Rust + System Tray) for Windows/Linux, Capacitor 8 for Android |
+| [`PVE-Center/pve-center-website`](https://github.com/PVE-Center/pve-center-website) | Official showcase, download hub, and bilingual EN/FR documentation portal | VitePress 1.x, Vue 3, Liquid Glass CSS |
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ PVE Command Center is organized into four focused open-source repositories under
 
 - **Web PWA**: Any modern browser (or Safari *Add to Home Screen* on iOS/iPadOS). Served directly by `pve-panel` on port `8000` (or via Tailscale HTTPS).
 - **Apple Native**: iOS 27 / iPadOS 27 / macOS 27 / tvOS 27 (Xcode 27+ & Swift 6.2 when building from source; works with a free Personal Apple account or paid Apple Developer Program for APNs background push).
-- **Windows / Linux / Android**: Download pre-built installers from [`pve-center-clients` Releases](https://github.com/Fairy-Jeux/pve-center-clients/releases), or build locally with Node.js 22+, Rust/Cargo (Tauri v2), or Android SDK / Gradle (Capacitor 8).
+- **Windows / Linux / Android**: Download pre-built installers from [`pve-center-clients` Releases](https://github.com/PVE-Center/pve-center-clients/releases), or build locally with Node.js 22+, Rust/Cargo (Tauri v2), or Android SDK / Gradle (Capacitor 8).
 
 ## First-Run Onboarding & Demo Mode
 

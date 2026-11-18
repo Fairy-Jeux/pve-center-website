@@ -1,6 +1,6 @@
 # Configuration, Probes & Notifications
 
-PVE Command Center stores its declarative configuration in `config/config.yaml` (mounted to `/app/config/config.yaml` in Docker). A complete annotated reference lives in [`config/config.example.yaml`](https://github.com/Fairy-Jeux/pve-panel/blob/main/config/config.example.yaml).
+PVE Command Center stores its declarative configuration in `config/config.yaml` (mounted to `/app/config/config.yaml` in Docker). A complete annotated reference lives in [`config/config.example.yaml`](https://github.com/PVE-Center/pve-panel/blob/main/config/config.example.yaml).
 
 ## Declarative `config.yaml` Features
 
@@ -233,4 +233,4 @@ Container and runtime path overrides:
 
 All `.env.example` service variables (`DEV_AUTH_BYPASS`, `ALLOWED_TAILSCALE_USERS`, `PROTECTED_OWNER_USERNAME`, `PVE_HOST`, `PVE_NODE`, `PVE_TOKEN_ID`, `PVE_TOKEN_SECRET`, `PVE_VERIFY_SSL`, `PANEL_SELF_VMID`, `JELLYFIN_*`, `JELLYSEERR_*`, `PLEX_*`, `RADARR_*`, `SONARR_*`, `PROWLARR_*`, `QBIT_*`) remain supported both as fallback settings and as `${VAR}` interpolation sources inside `config.yaml`.
 
-Legacy `services.yaml` (`categories` + `storage_mounts`) follows the structure documented in [`services.example.yaml`](https://github.com/Fairy-Jeux/pve-panel/blob/main/services.example.yaml).
+Legacy `services.yaml` (`categories` + `storage_mounts`) follows the structure documented in [`services.example.yaml`](https://github.com/PVE-Center/pve-panel/blob/main/services.example.yaml).

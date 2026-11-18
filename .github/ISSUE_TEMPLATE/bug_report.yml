@@ -21,7 +21,7 @@ body:
     id: page_url
     attributes:
       label: Page Path or URL
-      placeholder: "/guide/configuration or https://fairy-jeux.github.io/pve-center-website/..."
+      placeholder: "/guide/configuration or https://pve-center.github.io/pve-center-website/..."
     validations:
       required: true
   - type: textarea

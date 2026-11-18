@@ -7,7 +7,7 @@
     <strong>Official VitePress showcase, multi-platform download hub, and bilingual (EN / FR) technical documentation for the PVE Command Center ecosystem.</strong>
   </p>
   <p>
-    <a href="https://fairy-jeux.github.io/pve-center-website/"><img src="https://img.shields.io/badge/Docs-VitePress%201.x-06B6D4?style=flat-square&logo=vitepress&logoColor=white" alt="VitePress Docs" /></a>
+    <a href="https://pve-center.github.io/pve-center-website/"><img src="https://img.shields.io/badge/Docs-VitePress%201.x-06B6D4?style=flat-square&logo=vitepress&logoColor=white" alt="VitePress Docs" /></a>
     <img src="https://img.shields.io/badge/Languages-English%20%7C%20Fran%C3%A7ais-6366F1?style=flat-square" alt="Bilingual EN FR" />
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-10B981?style=flat-square" alt="MIT License" /></a>
   </p>
@@ -32,7 +32,7 @@
 ## 🚀 Local Development & Build
 
 ```bash
-git clone https://github.com/Fairy-Jeux/pve-center-website.git
+git clone https://github.com/PVE-Center/pve-center-website.git
 cd pve-center-website
 npm ci
 
@@ -48,14 +48,14 @@ npm run docs:preview
 
 ---
 
-## 🌐 Fairy-Jeux PVE Command Center Ecosystem
+## 🌐 PVE-Center Ecosystem
 
 | Repository | Description | Link |
 |---|---|---|
-| **Server & Web UI** | FastAPI backend, SQLite WAL, AlertEngine, mDNS, React 19 PWA, Docker & `install.sh` | [Fairy-Jeux/pve-panel](https://github.com/Fairy-Jeux/pve-panel) |
-| **Apple Native** | Unified Swift 6 / SwiftUI app for iPhone, iPad, Mac & Apple TV (`tvOS 27.0`) | [Fairy-Jeux/pve-center-apple](https://github.com/Fairy-Jeux/pve-center-apple) |
-| **Desktop & Android** | Tauri v2 desktop clients (Windows `.msi`/`.exe`, Linux `.AppImage`/`.deb`) & Capacitor 8 Android `.apk` | [Fairy-Jeux/pve-center-clients](https://github.com/Fairy-Jeux/pve-center-clients) |
-| **Website & Docs** | Bilingual VitePress showcase & documentation portal (this repository) | [Fairy-Jeux/pve-center-website](https://github.com/Fairy-Jeux/pve-center-website) |
+| **Server & Web UI** | FastAPI backend, SQLite WAL, AlertEngine, mDNS, React 19 PWA, Docker & `install.sh` | [PVE-Center/pve-panel](https://github.com/PVE-Center/pve-panel) |
+| **Apple Native** | Unified Swift 6 / SwiftUI app for iPhone, iPad, Mac & Apple TV (`tvOS 27.0`) | [PVE-Center/pve-center-apple](https://github.com/PVE-Center/pve-center-apple) |
+| **Desktop & Android** | Tauri v2 desktop clients (Windows `.msi`/`.exe`, Linux `.AppImage`/`.deb`) & Capacitor 8 Android `.apk` | [PVE-Center/pve-center-clients](https://github.com/PVE-Center/pve-center-clients) |
+| **Website & Docs** | Bilingual VitePress showcase & documentation portal (this repository) | [PVE-Center/pve-center-website](https://github.com/PVE-Center/pve-center-website) |
 
 ---
 
